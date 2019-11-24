@@ -35,6 +35,11 @@ public class App {
         int c; // deklaracja zmiennej c, która zawiera sumę
         c = suma(6,89); // przypisanie wyniku metody do zmiennej c
         System.out.println(c);
+
+        //Example example = new Example();
+        Kanapka mojaKanapka = new Kanapka();// utworzenie obiektu kanapka
+        mojaKanapka.wyswietlSkladKanapki();// wywolanie metody na obiekcie kanapka
+
     }
 
     /**
