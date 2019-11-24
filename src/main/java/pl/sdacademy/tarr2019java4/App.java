@@ -18,9 +18,19 @@ public class App {
     //psvm + tab
     public static void main(String[] args) {
         //sout + tab
-        System.out.println("Hello World!");
+        System.out.println("Hello World!");// polecenie wypisuje na konsole
 
-      
+
+        int number = 5;// deklaracji i inicjalizacji
+        System.out.println("To jest liczba "+ number);
+
+        // inny przyklad
+
+        int rok; // deklaracja
+        rok = 2019; // inicjalizacja
+        //skrót : sout
+        System.out.println(rok);
+        System.out.println("rok");// to jest napis w cudzysłowiu
     }
 
 }
