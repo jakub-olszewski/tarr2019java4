@@ -39,11 +39,25 @@ public class App {
         //Example example = new Example();
         Kanapka mojaKanapka = new Kanapka();// utworzenie obiektu kanapka
         mojaKanapka.wyswietlSkladKanapki();// wywolanie metody na obiekcie kanapka
+        // wyswietli "nutella" czyli domyslna kanapka
+
+        Kanapka kanapkaZPomidorem = new Kanapka("pomidor");
+        kanapkaZPomidorem.wyswietlSkladKanapki();
+        // wyswietli "pomidor" czyli konstruktor argumentowy ze skladem
 
         // TypDanych nazwa = new Obiekt();
         McDonald mcDonaldNaDworcu = new DworzecMcDonaldImpl();// tworzenie obiektu implementacji interfejsu
         mcDonaldNaDworcu.poproszeFrytki(50); // wywolanie metody w mcdonald na dworcu
 
+        User annaNowak21 = new User("Anna","Nowak",21);
+        System.out.println(annaNowak21.toString());
+
+        // dokończyć toString i bez toString
+        // konstruktor i przepisywanie wartości - jak to działa ?
+        // slajdy skonczylismy na typy danych
+        // czym sie roznia prymitywne od obiektowych ?
+        // przyklad String oraz double/Double
+        //
     }
 
     /**
