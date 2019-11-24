@@ -40,6 +40,10 @@ public class App {
         Kanapka mojaKanapka = new Kanapka();// utworzenie obiektu kanapka
         mojaKanapka.wyswietlSkladKanapki();// wywolanie metody na obiekcie kanapka
 
+        // TypDanych nazwa = new Obiekt();
+        McDonald mcDonaldNaDworcu = new DworzecMcDonaldImpl();// tworzenie obiektu implementacji interfejsu
+        mcDonaldNaDworcu.poproszeFrytki(50); // wywolanie metody w mcdonald na dworcu
+
     }
 
     /**
