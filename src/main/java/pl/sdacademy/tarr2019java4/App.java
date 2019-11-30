@@ -52,6 +52,22 @@ public class App {
         User annaNowak21 = new User("Anna","Nowak",21);
         System.out.println(annaNowak21.toString());
 
+
+        PozycjaZamowienia pozycja1 = new PozycjaZamowienia("Papier A4",11.99f);
+        PozycjaZamowienia pozycja2 = new PozycjaZamowienia("Ołówki",2.99f);
+        PozycjaZamowienia pozycja3 = new PozycjaZamowienia("Długopisy",7.99f);
+
+        float sumaPozycji = pozycja1.pobierzCena()+pozycja2.pobierzCena()+pozycja3.pobierzCena();
+
+        // brakuje wypisania nazw poszczególnych pozycji
+        // toString w klasie PozycjaZamowienia
+
+        System.out.println("Suma pozycji :"+sumaPozycji);
+
+
+
+
+
         // dokończyć toString i bez toString
         // konstruktor i przepisywanie wartości - jak to działa ?
         // slajdy skonczylismy na typy danych
