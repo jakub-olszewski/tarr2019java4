@@ -62,6 +62,15 @@ public class App {
         // brakuje wypisania nazw poszczególnych pozycji
         // toString w klasie PozycjaZamowienia
 
+        System.out.println("=============================\n\nLista zamówień:\n\n");
+        System.out.println(pozycja1.pobierzNazwa());
+        System.out.println(pozycja2.toString());// metoda toString zawiera informacje o cenie
+        System.out.println(pozycja3);// domyślne użycie metody toString nie trzeba jej pisać
+
+        // czyli wystarczy
+        // znak enter \n
+        System.out.println("-----------");
+        System.out.println(pozycja1+"\n"+pozycja2+"\n"+pozycja3);// to co powyzej tylko w jednej linii
         System.out.println("Suma pozycji :"+sumaPozycji);
 
 
