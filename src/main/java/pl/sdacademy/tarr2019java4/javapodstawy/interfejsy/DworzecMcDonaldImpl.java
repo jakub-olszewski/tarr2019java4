@@ -1,4 +1,4 @@
-package pl.sdacademy.tarr2019java4;
+package pl.sdacademy.tarr2019java4.javapodstawy.interfejsy;
 
 public class DworzecMcDonaldImpl implements McDonald {
 

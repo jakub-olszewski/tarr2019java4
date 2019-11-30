@@ -1,4 +1,4 @@
-package pl.sdacademy.tarr2019java4;
+package pl.sdacademy.tarr2019java4.operatory;
 
 public class PozycjaZamowienia {
 
@@ -17,6 +17,15 @@ public class PozycjaZamowienia {
         return cena;
     }
 
+    public String pobierzNazwa() {
+        return nazwa;
+    }
 
+    public String toString(){
+        return nazwa+" \t"+cena;
+    }
 
+    public String info(){
+        return nazwa+" ............"+cena;
+    }
 }
