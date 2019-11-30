@@ -1,4 +1,4 @@
-package pl.sdacademy.tarr2019java4.operatory;
+package pl.sdacademy.tarr2019java4.javapodstawy.operatory;
 
 public class OperatoryMain {
 
