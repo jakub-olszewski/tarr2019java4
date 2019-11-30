@@ -11,5 +11,16 @@ public class InstrukcjeMain {
         // wiek 21
 
         // wypisanie na ekran
+
+        boolean odpowiedz =  Sprawdz.czyJestPelnoletni(32);
+        //if(odpowiedz==true){// odpowiedzi jest true albo false / wiec nie trzeba
+            //pisać == true
+        if(odpowiedz)
+            System.out.println("Jest pelnoletni");
+        }else{
+            System.out.println("Nie jest pelnoletni");
+        }
+
+        //enum Status i Plec
     }
 }
