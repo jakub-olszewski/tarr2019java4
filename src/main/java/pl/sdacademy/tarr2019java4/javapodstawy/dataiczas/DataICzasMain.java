@@ -2,6 +2,7 @@ package pl.sdacademy.tarr2019java4.javapodstawy.dataiczas;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.logging.SimpleFormatter;
 
 public class DataICzasMain {
 
@@ -31,16 +32,24 @@ public class DataICzasMain {
 
         System.out.println(informacja);
 
+        String sylwesterData = "2019-12-31 23:59:59";
+        System.out.println("Sylwester jako data :"+zamienNapisNaDate(sylwesterData));
+
+        LocalDateTime koniecSwiataDateTime = LocalDateTime.of(2012,12,12,12,12);
+        System.out.println("Koniec świata jest datą zmienioną jako napis :"+zamienDateNaNapis(koniecSwiataDateTime));
     }
 
-    private LocalDateTime zamienNapisNaDate(String dataJakoNapis){
+    private static LocalDateTime zamienNapisNaDate(String dataJakoNapis){
         String formatDaty = "yyyy-MM-dd HH:mm:ss";
         DateTimeFormatter formater = DateTimeFormatter.ofPattern(formatDaty);
         LocalDateTime dataDateTime = LocalDateTime.parse(dataJakoNapis,formater);
         return dataDateTime;// data jako data obiekt a nie jako napis
     }
 
-    private String zamienDateNaNapis(/* data*/ ){
-        return "";// napis
+    private static String zamienDateNaNapis(LocalDateTime terazDateTime){
+        String formatDaty = "yyyy-MM-dd HH:mm:ss";
+        DateTimeFormatter formater = DateTimeFormatter.ofPattern(formatDaty);
+        String dataJakoNapis = terazDateTime.format(formater);// formatujemy za pomocą formatera
+        return dataJakoNapis;
     }
 }
