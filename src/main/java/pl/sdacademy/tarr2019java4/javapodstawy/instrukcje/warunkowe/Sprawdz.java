@@ -6,6 +6,7 @@ public class Sprawdz {
     // boolean jestPelnoletni(int wiek)
 
     public static boolean czyJestPelnoletni(int wiek){
+        return false;
     }
 
     public static boolean czyJestAktywny(Status status){
@@ -14,6 +15,7 @@ public class Sprawdz {
 
     // string toLowerCase()
     public static boolean czyJestKobieta(String plec){
+        return plec.toLowerCase().equals("kobieta");
     }
 
     /**
@@ -22,5 +24,6 @@ public class Sprawdz {
      * @return prawda/fałsz
      */
     public static boolean czyJestKobieta(Plec plecOsoby){
+        return plecOsoby.equals(Plec.KOBIETA);
     }
 }
