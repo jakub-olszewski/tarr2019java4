@@ -33,7 +33,7 @@ public class KolekcjeMain {
         for (Integer liczba : listaLiczb){
             System.out.print(liczba);
         }
-        System.out.println("====== for z iteratorem ============================\n\n");
+        System.out.println("\n\n====== for z iteratorem ============================\n\n");
 
         // for z iteratorem
         // deklaracja i inicjalizacja iteratora ; warunek zakończenia ; krok
@@ -57,5 +57,9 @@ public class KolekcjeMain {
         listaPozycji.add(pozycja3);
 
         //Zadanie z użyciem pętli for wypisz pozycje ( uwaga użyj toString())
+
+        for (PozycjaZamowienia pozycja : listaPozycji){
+            System.out.println(pozycja);
+        }
     }
 }
