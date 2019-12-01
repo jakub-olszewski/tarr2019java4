@@ -37,6 +37,15 @@ public class DataICzasMain {
 
         LocalDateTime koniecSwiataDateTime = LocalDateTime.of(2012,12,12,12,12);
         System.out.println("Koniec świata jest datą zmienioną jako napis :"+zamienDateNaNapis(koniecSwiataDateTime));
+
+
+        // --- Zadanie
+        LocalDateTime ostatnieLogowanieDateTime = LocalDateTime.of(2018,8,1,12,23);
+        String formatLogowania = "HH:mm dd/MM/yyyy";
+        DateTimeFormatter formaterLogowania = DateTimeFormatter.ofPattern(formatLogowania);
+        String logowanieJakoNapis = ostatnieLogowanieDateTime.format(formaterLogowania);// formatujemy za pomocą formatera
+        System.out.println("Zadanie data ostatniego logowania: "+logowanieJakoNapis);
+
     }
 
     private static LocalDateTime zamienNapisNaDate(String dataJakoNapis){
