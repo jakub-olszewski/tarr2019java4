@@ -32,4 +32,15 @@ public class DataICzasMain {
         System.out.println(informacja);
 
     }
+
+    private LocalDateTime zamienNapisNaDate(String dataJakoNapis){
+        String formatDaty = "yyyy-MM-dd HH:mm:ss";
+        DateTimeFormatter formater = DateTimeFormatter.ofPattern(formatDaty);
+        LocalDateTime dataDateTime = LocalDateTime.parse(dataJakoNapis,formater);
+        return dataDateTime;// data jako data obiekt a nie jako napis
+    }
+
+    private String zamienDateNaNapis(/* data*/ ){
+        return "";// napis
+    }
 }
