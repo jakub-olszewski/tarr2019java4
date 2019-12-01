@@ -1,5 +1,7 @@
 package pl.sdacademy.tarr2019java4.javapodstawy.instrukcje.warunkowe;
 
+import pl.sdacademy.tarr2019java4.javapodstawy.instrukcje.Status;
+
 public class Sprawdz {
 
     // metoda sprawdzajaca pelnoletniosc

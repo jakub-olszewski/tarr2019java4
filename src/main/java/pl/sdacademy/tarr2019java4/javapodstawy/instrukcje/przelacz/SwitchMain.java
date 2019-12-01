@@ -37,5 +37,6 @@ public class SwitchMain {
         //Zadanie z tablicy
         // enum Kierunkek { 4 strony świata }
         // switch do jakich miast dojedziemy
+
     }
 }
