@@ -38,5 +38,21 @@ public class SwitchMain {
         // enum Kierunkek { 4 strony świata }
         // switch do jakich miast dojedziemy
 
+        Kierunek gdzieJedziemy = Kierunek.POLNOC;
+        switch (gdzieJedziemy){
+            case POLNOC:
+                System.out.println("Jedziemy do Gdańska");
+                break;
+            case WSCHOD:
+                System.out.println("Jedziemy do Bydgoszcz");
+                break;
+            case ZACHOD:
+                System.out.println("Jedziemy do Łódź");
+                break;
+            case POLUDNIE:
+                System.out.println("Jedziemy do Warszawa");
+                break;
+        }
+
     }
 }
