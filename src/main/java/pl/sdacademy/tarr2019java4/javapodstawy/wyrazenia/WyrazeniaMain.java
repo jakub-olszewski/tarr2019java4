@@ -1,5 +1,6 @@
 package pl.sdacademy.tarr2019java4.javapodstawy.wyrazenia;
 
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -39,6 +40,27 @@ public class WyrazeniaMain {
          *
          * Dodatkowo: numer może mieć ale nie musi +48
          */
+        System.out.println("\n====== TEST WPROWADZANIA NUMERU TELEFONU ======");
+        // utworzenie skanera
+        Scanner skaner = new Scanner(System.in);
+
+        // pytanie o wprowadzenie numeru
+        System.out.println("Wprowadź numer telefonu: ");
+
+        // pobieranie z klawiatury do zmiennej
+        String odpowiedz = skaner.nextLine();
+
+        // porównanie ze wzorcem
+
+        // wynik porównania - informacja na konsole
+        boolean czyPasuje = false;
+
+        // gdy wynik porównania jest ok przerwanie pętli
+        if(czyPasuje){
+            // przerwanie pętli
+        }
+
+
 
     }
 }
