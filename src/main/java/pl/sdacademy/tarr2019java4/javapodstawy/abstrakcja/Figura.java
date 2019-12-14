@@ -6,7 +6,7 @@ package pl.sdacademy.tarr2019java4.javapodstawy.abstrakcja;
  */
 public abstract class Figura {
 
-    String nazwa;
+    protected String nazwa;
 
     public Figura(String nazwa){
         // this - oznacze miejsce w którym jesteśmy

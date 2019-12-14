@@ -4,22 +4,29 @@ import pl.sdacademy.tarr2019java4.javapodstawy.abstrakcja.Figura;
 
 public class Kwadrat extends Figura {
 
+    int a;
+
     public Kwadrat(String nazwa) {
         super(nazwa);// wywołanie konstruktora rodzica/dziadka
     }
 
+    public Kwadrat(int a){
+        this("Kwadrat");
+        this.a = a;
+    }
+
     @Override
     public int obliczPole() {
-        return 0;
+        return a*a;
     }
 
     @Override
     public int obliczObwod() {
-        return 0;
+        return 4*a;
     }
 
     @Override
     public String toString() {
-        return null;
+        return nazwa+" pole:"+obliczPole();
     }
 }
