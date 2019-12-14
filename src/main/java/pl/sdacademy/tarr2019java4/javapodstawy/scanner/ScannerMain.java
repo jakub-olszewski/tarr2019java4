@@ -1,12 +1,13 @@
 package pl.sdacademy.tarr2019java4.javapodstawy.scanner;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class ScannerMain {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         /*
         Utwórz tablice zawierającą liczby wczytane za pomocą scanner
         użyj nextInt()
@@ -37,21 +38,35 @@ public class ScannerMain {
             System.out.print(liczba+" ");
         }
         // b) pętla (while) i ilosc--
-
+        //skaner.close();
+        System.out.println("\n=========================================");
         //================ wersja z pytaniem
         // w pętli
         boolean czyKoniecPobierania = false;
         List<Integer> listaLiczb = new ArrayList<>();
+        Scanner odczyt = new Scanner(System.in);
+
         while (!czyKoniecPobierania){
-            System.out.println("Wprowadź liczbę:");
-            listaLiczb.add(skaner.nextInt());
+
+
+            System.out.println("\nWprowadź liczbę:");
+            int liczba = odczyt.nextInt();
+            listaLiczb.add(liczba);
+
+            odczyt.nextLine();// znak enter po wpisaniu liczby
+
             System.out.println("Czy chcesz zakończyć wprowadzanie [t/n] ?");
-            if(/*tak*/){
+            String odpowiedz = odczyt.nextLine();
+            System.out.println("odpowiedz: "+odpowiedz);
+            if(odpowiedz.equals("t")){
                 // ma się zakończyć
+                System.out.println("Koniec wprowadzania");
+                czyKoniecPobierania = true;
             }
         }
         // wypisanie wprowadzonych liczb
-
+        odczyt.close();
+        skaner.close();
 
     }
 }
