@@ -57,7 +57,7 @@ public class WyrazeniaMain {
 
                 // wynik porównania - informacja na konsole
                 String wyrazenieRegularne = "\\d{3}-\\d{3}-\\d{3}";
-
+                wyrazenieRegularne = "(\\+48 \\d{3}-\\d{3}-\\d{3}|\\d{3}-\\d{3}-\\d{3})";// z numerem +48
                 Pattern compiledPattern = Pattern.compile(wyrazenieRegularne);
                 Matcher matcher = compiledPattern.matcher(odpowiedz);
 
