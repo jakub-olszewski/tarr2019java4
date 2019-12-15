@@ -1,6 +1,22 @@
 package pl.sdacademy.tarr2019java4.javapodstawy.dziedziczenie;
 
+import pl.sdacademy.tarr2019java4.javapodstawy.dziedziczenie.animals.birds.Eagle;
+import pl.sdacademy.tarr2019java4.javapodstawy.dziedziczenie.animals.mammals.Deer;
+import pl.sdacademy.tarr2019java4.javapodstawy.dziedziczenie.animals.mammals.Elephant;
+import pl.sdacademy.tarr2019java4.javapodstawy.dziedziczenie.animals.mammals.Lion;
+import pl.sdacademy.tarr2019java4.javapodstawy.dziedziczenie.animals.mammals.Squirrel;
+import pl.sdacademy.tarr2019java4.javapodstawy.dziedziczenie.animals.plants.Grass;
+import pl.sdacademy.tarr2019java4.javapodstawy.dziedziczenie.animals.plants.Sunflower;
+import pl.sdacademy.tarr2019java4.javapodstawy.dziedziczenie.animals.snakes.Boa;
+
+
+/**
+ * Main
+ *
+ * @author: Jakub Olszewski [http://github.com/jakub-olszewski]
+ **/
 public class AnimalsMain {
+
     public static void main(String[] args) {
         /**
          * Zadanie: Utworz odpowiednie zwierzaki
@@ -45,6 +61,8 @@ public class AnimalsMain {
          * i będzie dostępny we wszystkich klasa które rozszerzają
          * klase Animal
          */
+        printStage();
+        Squirrel pinky = new Squirrel("Pinky");
 
 
         /**
@@ -55,14 +73,20 @@ public class AnimalsMain {
          *
          * 'imieWiewiorki' została zjedzona przez 'imieOrła'
          */
-
+        printStage();
+        Eagle baldEagle = new Eagle("Bald Eagle");
+        baldEagle.eat(pinky);// orzeł zjada pinky
 
         /**
          * Zadanie3:Utworz obiekt Lion i Elephant.
          * Elephant ucieka.
          * Lion chce to zjeść.
          */
-
+        printStage();
+        Lion kingLion = new Lion("King Lion");
+        Elephant dumboElephant = new Elephant("Dumbo");
+        dumboElephant.runAwayFrom(kingLion);
+        kingLion.eat(dumboElephant);
 
         /**
          * Zadanie4:Utworz jelonek 'Bambi'.
@@ -70,14 +94,39 @@ public class AnimalsMain {
          * Lew uciekł z ZOO i chce zjeść jelonka.
          *
          */
+        printStage();
+        Deer bambiDeer = new Deer ("Bambi");
+        Grass grass = new Grass("Trawa");
+        bambiDeer.eat(grass);
 
+        bambiDeer.runAwayFrom(kingLion);
+        kingLion.eat(bambiDeer);
 
         /**
          * Zadanie5: Boa 'Kaa' próbuje udusić jelonka. Udaje mu się. :(
          * Potem próbuje udusić słonia i ma problem.
          *
          */
+        printStage();
+        Boa kaaBoa = new Boa("Kaa");
+        kaaBoa.strangle(bambiDeer);
+        kaaBoa.strangle(dumboElephant);
 
 
+        /**
+         * Zadanie 6: Wiewiórka 'Benny"zjada słonecznik. Po chwili wąż zaczyna dusić wiewiórkę
+         */
+        printStage();
+        Sunflower sunflower = new Sunflower();
+        Squirrel benny = new Squirrel("Benny");
+        benny.eat(sunflower);
+        kaaBoa.strangle(benny);
+    }
+
+    private static int stage = 1;
+
+    public static void printStage(){
+        System.out.println("\n\n>>> Rozdział "+stage+". ===========================");
+        stage++;
     }
 }

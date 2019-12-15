@@ -24,5 +24,7 @@ public abstract class Figura {
 
     public abstract int obliczObwod();
 
-    public abstract String toString();
+    public String toString(){
+        return nazwa +"\t | pole:"+ obliczPole();
+    }
 }
